@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>event in javascript</title>
+</head>
+
+<body>
+<!-- html tag -->
+	<!-- <form> 
+		<input type="text" onkeydown="return noNumbers(event)">
+	</form>
+
+
+
+
+	<script type="text/javascript">
+		// script code here
+		function noNumbers(e){
+			var keynum ;
+			var keychar ;
+			var numcheck;
+			if(window.event)
+				{ keynum = e.keyCode ;
+				   }else{
+				   	if(e.which) keynum = e.which ;
+				     
+				   }
+					keychar = String.fromCharCode(keynum) ;
+					 numcheck = /\d/ ; // regular expression finds any non didit character 
+
+			//return !numcheck.test(keychar) ;
+			document.write('dss'+!numcheck.test(keychar));
+			alert("helllo") ;
+
+		}
+
+	</script>
+ -->
+ 	<p>Click the button to loop through the frames on this page, and change the location of every frame to 			"w3schools.com".</p>
+
+		<button onclick="myFunction()">Try it</button>
+		<br><br>
+		<!-- // cửa sổ dc chia thành 3 frame  -->
+		<iframe src="https://www.cnn.com"></iframe>  <!-- // cac frame ban đầu trỏ đến các URL bên như sau: -->
+		<iframe src="https://www.bbc.com"></iframe>
+		<iframe src="https://www.nytimes.com"></iframe>
+
+		<script>
+		function myFunction() {
+		    var frames = window.frames;
+		    var i;
+
+		    for (i = 0; i < frames.length; i++) {
+			frames[i].location = "https://www.w3schools.com"; /*mảng frame lưu trữ tất cả các fram trong một của sổ 				trình duyệt, do vậy khi ta gán thuộc tính location = "https://www.w3schools.com",t tất cả các fram 					đều trỏ đến trang đó */
+		    }
+		}
+		</script>
+
+
+
+
+</body>
+</html>

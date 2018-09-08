@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> parent_window</title>
+</head>
+<body>
+		<body>
+
+			<p>Click the button to wait 3 seconds, then alert "Hello".</p>
+			<p>After clicking away the alert box, an new alert box will appear in 3 seconds. This goes on forever...</p>
+			<button onclick="myFunction()">Try it</button>
+
+			<script>
+			function myFunction() {
+			    setInterval(function(){ alert("Hello"); }, 5000); // sau 3000ms se goi den ham alert() 1 lan
+			}
+			</script>
+
+			</body>
+</body>
+</html>

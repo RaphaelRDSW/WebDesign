@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html03</title>
+	<meta charset="utf-8">
+	
+</head>
+
+<body>
+<!-- <input type = "tex" name = "type_text"> ;
+<input type="text" name="aaa" value="Điền cái g ì đó vào đây"/>
+<input type="checkbox" name="type_checkbox">
+
+
+<input type="radio" name="type_radio" value="không yêu" />
+<input type="radio" name="type_radio" value="không yêu" />
+<input type="radio" name="type_radio" value="không yêu" />
+<input type="radio" name="type_radio" value="yêu" />
+
+<input type="radio" name="type_radio" value="không yêu" />
+<input type="radio" name="type_radio" value="không yêu" />
+<input type="radio" name="type_radio" value="không yêu" />
+<input type="radio" name="type_radio" value="yêu" checked="yes" /> -->
+<!-- <form>
+<input type="text" size="12" maxlength="12" />
+<input type="password" size="24" maxlength="24" />
+<input type="reset" value="Day la nut Reset" />
+<input type="hidden" value="2009"/>
+</form> -->
+
+<!-- <select>
+<option>A</option>
+<option>B</option>
+<option>C</option>
+</select> -->
+
+<!-- <select size="10" multiple = "yes"> 
+<option>A</option>
+<option>B</option>
+<option>C</option>
+<option>D</option>
+<option>E</option>
+<option>F</option>
+<option>G</option>
+<option>H</option>
+<option>I</option>
+</select>
+ -->
+
+<!-- <select multip le="yes">
+<option selected="no">Người yêu</option>
+<option selected="yes">Bạn bè</option>
+<option selected="yes">Gia đ ình</option>
+</select> -->
+
+
+<!-- <div id="form_example" >
+	<form name="the_form" action="new.html" id="form">
+		Name :<input type="text" name="name"/> <input type="submit" name="submit"><br/>
+		Email :<input type="text" name="Email"> <input type="submit" name="submit"> <br/>
+		Children (Yes/No): <input type="checkbox" name="Children"> <br>
+		Sexually <select name="Sexually">
+			     <option value="0">Female</option>
+			     <option value="1">Male</option>
+		</select> <br/>
+
+        Political Opinion :<br> <input type="radio" name="Socialist" value="Socialist" <p>Socialist</p>  
+                           <input type="radio" name="Socialist" value="Socialist" <p>Socialist</p>   
+                           <input type="radio" name="Socialist" value="Socialist" <p>Socialist</p> 
+                           <input type="radio" name="Socialist" value="Socialist" <p>Socialist</p>
+        Note1: <textarea name="note" wrap="yes">
+        	   add your note here 
+              </textarea> 
+        
+        Note2: <textarea name="note" wrap="no">
+               add your note here 
+              </textarea> 
+
+              <input type="reset" name="reset" value="Remove All">
+              <input type="submit" name="submit" value="submit">                        
+
+	</form>
+
+</div>
+
+<style type="text/css">
+	
+	#form_example {
+		background-color: #e3dddc;	
+	}
+</style>
+ -->
+
+
+<!-- <form name="Name_Form" onsubmit="var trangthai = guestname(); return trangthai"  >
+	Name : <textarea name="name"></textarea> <br>
+	       <input type="submit" name="submit"/> 
+	
+</form> -->
+
+
+<!-- kiem tra nhap ten chua -->
+<!-- <script type="text/javascript">
+	function guestname() {
+		if(document.Name_Form.name.value==''){
+			alert("ban chua dien thong tin") ;
+			alert("dien lai di ha") ;
+			return false;
+		}else{
+			alert(document.Name_Form.name.value) ;
+		}
+	}
+
+</script>
+
+<form name="Name_Form" onsubmit= "var trangthai = guestname(); //return trangthai"  >
+	Name : <textarea name="name"></textarea> <br>
+	       <input type="submit" name="submit"/> 
+	
+</form> -->
+
+
+<!-- /select code
+<form name="aa" onsubmit="vd();">
+	<select name="bb" size="3" multiple="yes">
+		<option value="01"> Lua chon 1</option>
+		<option value="02"> Lua chon 2</option>
+		<option value="03"> Lua chon 3</option>
+		<option value="04"> Lua chon 4</option>
+	</select>
+	<input type="submit" name="submit">
+le also ask
+What is the angular js?
+</form>
+
+<script type="text/javascript">
+	function vd() {
+		if(document.aa.bb.value !=""){
+        alert(document.aa.bb.selectedIndex) ;
+	}else alert("Plese,choses one option atleast" + document.aa.bb.selectedIndex)
+	    
+	}
+</script> -->
+
+
+<!-- // Kiem tra cac nut radio 
+
+<form name="RadioForm" onclick="alert(document.RadioForm.aaa.value">
+	<input type="radio" name="aaa" value="01" checked="checked">
+	<input type="radio" name="aaa" value="02">
+	<input type="radio" name="aaa" value="03">
+	<input type="radio" name="aaa" value="04">
+</form>
+<script type="text/javascript">
+	var check = "no" ;
+	for( var i = 0 ; i < document.RadioForm.aaa.length ; i++){
+		if(document.RadioForm.aa[i].checked == true){
+			check="yes" ;	
+		}
+		if(check=="yes"){
+			alert("Da chon") ;
+			return true ;
+		}else{
+			alert("Chua Chon");
+			return false ;
+		}
+
+	}
+
+</script> -->
+
+
+<!-- <script src="lesson6_Operator.js">
+
+</script> -->
+
+<!-- //Thao tac voi String 
+ 
+<script type="text/javascript">
+	
+  var str   = "-Dang Cong San Viet Nam Quang Ving Muon Nam-";
+  var str1  = "BuiDai" ; 
+  var index = str.search(str1); // search string ;
+  document.write(index);
+  
+  document.write(str.substring(str.search('Viet'),str.search('Muon'))) ; // get String ;
+
+  
+
+  var str2 = "Lien Xo";   // repalce string ;
+  var kq =  str.replace("Viet","Lien") ;
+  var kq1 = kq.replace("Nam","Xo") ;
+  document.write(kq1.toUpperCase());
+
+
+  /*if(index = -1){
+  	alert("deo co string ban vua nhap");
+  } else{
+  	
+  }*/
+
+
+
+</script> -->
+
+<!-- //Window  -->
+<!-- <a href="javascript: void(0)" onclick="window.open('http:dantri.com.vn','new_windw');">XEM</a> -->
+
+<!-- <script type="text/javascript">
+//window.open("http://dantri.com.vn/","Dan tri")	;
+window.open("http://dantri.com.vn","cua_so_moi" , "width=300, height = 400") ;
+cua_so_moi.move(350,350) ;
+ 
+ function move()
+{
+window.moveBy(50,50)
+setTimeout('move();',1000);
+}
+move();
+
+</script> -->
+
+
+<!-- <script type="text/javascript">
+//hàm bắt đầu làm toán
+function batdau()
+{
+alert("Kết quả của biểu thức: 3+5=?");
+dapan=8;
+/*bắt đầu tính thời gian, trong trường hợp này ta
+gan một biến cho setTimeout để dễ hao tác hơn*/
+hengio=setTimeout("sai();",5000);
+}
+//hàm thông báo khi sai
+function sai()
+{
+alert("Đáp án đúng là "+dapan);
+}
+//hàm kiểm tra
+function check()
+{
+if(document.the_form.kq.value==dapan)
+{
+alert("Chúc mừng bạn đã trả lời đúng");
+//Xoá bỏ hẹn giờ với clearTimeout
+clearTimeout(hengio);
+}else{
+sai();
+clearTimeout(hengio);
+}
+}
+</script> -->
+
+<!-- <div id="1">
+	<b id="2">
+
+		<i>Xem dòng text mẫu
+		</i>
+
+	</b>
+</div>
+
+
+
+<script>
+document.write("Lần thứ hai vẫn thế vì chỉ bỏ cặp thẻ div "+document.getElementById("1").innerHTML+"<br/>");
+document.write("nhưng lần sau thì chỉ còn in nghiêng "+document.getElementById("2").innerHTML+"<br/>");
+</script>
+ -->
+
+<!-- <script type="text/javascript">
+	function changeText() {
+		var oldText = document.getElementById("slogan").innerHTML ;
+		var newText = "<font color = red> " + oldText + " </font>";
+		document.getElementById('slogan').innerHTML = newText ;
+
+	}
+	
+
+
+</script>
+
+ 
+<p id='slogan'>
+	Chào mừng các bạn đến với 
+	<b id='boldStuff3'>
+		hocvui.net
+	</b>
+</p>
+
+<input type='button' onclick='changeText()' value='Change Text'/> -->
+
+<script type="text/javascript">
+	document.write("your browser is : " + navigator.appName+"-version : " + navigator.appVersion ) ;
+</script>
+
+</body>
+</html>

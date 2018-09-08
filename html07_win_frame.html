@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to loop through the frames on this page, and change the location of every frame to "w3schools.com".</p>
+
+<button onclick="myFunction()">Try it</button>
+<br><br>
+
+<iframe src="https://www.cnn.com"></iframe>
+<iframe src="https://www.bbc.com"></iframe>
+<iframe src="https://www.nytimes.com"></iframe>
+
+<script>
+function myFunction() {
+    var frames = window.frames;
+    var i;
+
+    for (i = 0; i < frames.length; i++) {
+        frames[i].location = "https://www.dantri.com.vn";
+    }
+}
+</script>
+
+</body>
+</html>
